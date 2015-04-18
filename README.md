@@ -7,7 +7,7 @@ Public Assets - icons, logos, fonts etc
 
 ### All logos in an `SVG` format
 
-![Dashboard HubLogos in SVG](logos.svg)
+Dashboard HubLogos in SVG logos.svg (svg will not render in Github)
 
 Resource: http://cdn.dashboardhub.io/logos.svg
 
