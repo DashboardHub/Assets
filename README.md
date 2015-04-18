@@ -28,7 +28,7 @@ Large
 Resource: http://cdn.dashboardhub.io/logo-horizontal-std-2567x580.png
 
 Small
-![Dashboard Hub Horizontal Logo](logo-horizontal-std-109-20.png)
+![Dashboard Hub Horizontal Logo](logo-horizontal-std-109x20.png)
 
 Resource: http://cdn.dashboardhub.io/logo-horizontal-std-109x20.png
 
