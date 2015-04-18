@@ -52,7 +52,7 @@ Resource: http://cdn.dashboardhub.io/logo-horizontal-white-2567x580.png
 #### Standard colours
 
 Large
-![Dashboard Hub Vertical Logo](logo-vertical-std-2567x580.png)
+![Dashboard Hub Vertical Logo](logo-vertical-std-1872x1433.png)
 
 Resource: http://cdn.dashboardhub.io/logo-vertical-std-1872x1433.png
 
