@@ -46,6 +46,11 @@ Large
 
 Resource: http://cdn.dashboardhub.io/logo-horizontal-white-2567x580.png
 
+Medium
+![Dashboard Hub Horizontal Logo](logo-horizontal-white-400x90.png)
+
+Resource: http://cdn.dashboardhub.io/logo-horizontal-white-400x90.png
+
 
 ### Vertical Dashboard Hub Logo
 
