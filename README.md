@@ -51,7 +51,6 @@ Medium
 
 Resource: http://cdn.dashboardhub.io/logo-horizontal-white-400x90.png
 
-
 ### Vertical Dashboard Hub Logo
 
 #### Standard colours
