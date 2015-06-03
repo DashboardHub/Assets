@@ -51,6 +51,7 @@ Medium
 
 Resource: http://cdn.dashboardhub.io/logo-horizontal-white-400x90.png
 
+
 ### Vertical Dashboard Hub Logo
 
 #### Standard colours
@@ -102,3 +103,8 @@ Large
 ![Dashboard Hub Icon only](icon-only-white-1216x1160.png)
 
 Resource: http://cdn.dashboardhub.io/icon-only-white-1216x1160.png
+
+
+### QR code
+
+![DashboardHub QR code](dashboardhub-qr-code.svg)
