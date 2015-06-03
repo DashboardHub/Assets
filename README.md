@@ -107,4 +107,4 @@ Resource: http://cdn.dashboardhub.io/icon-only-white-1216x1160.png
 
 ### QR code
 
-![DashboardHub QR code](dashboardhub-qr-code.svg)
+[DashboardHub QR code](dashboardhub-qr-code.svg)
