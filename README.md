@@ -4,6 +4,10 @@ Public Assets - icons, logos, fonts etc
 
 ## Dashboard Hub Logos
 
+### Colors
+
+* Orange `#FF5A00`
+* Grey `#4D4D4D`
 
 ### All logos in an `SVG` format
 
