@@ -22,6 +22,8 @@ Resource: http://cdn.dashboardhub.io/favicon.ico
 
 #### Standard colours
 
+SVG http://cdn.dashboardhub.io/logo-horizontal-std.svg
+
 Large
 ![Dashboard Hub Horizontal Logo](logo-horizontal-std-2567x580.png)
 
