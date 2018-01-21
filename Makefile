@@ -22,13 +22,13 @@ sync: guard-AWS_CLOUDFRONT_ID
 	aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_ID} --paths /\*
 
 pipeline.version.build.start:
-	curl -XPOST -H "Content-Type: application/json" -d '{"release":"0.1.${TRAVIS_BUILD_NUMBER}"}' https://api-pipeline.dashboardhub.io/environments/4c561a20-ddc0-11e7-8be6-8d1c32f4579f/deployed/${DH_TOKEN}/startBuild
+	curl -XPOST -H "Content-Type: application/json" -d '{"release":"0.1.${TRAVIS_BUILD_NUMBER}"}' https://api-pipeline.dashboardhub.io/environments/e4ee46c0-fe4c-11e7-b4bd-35d420cf5b7e/deployed/${DH_TOKEN}/startBuild
 
 pipeline.version.build.finish:
-	curl -XPOST -H "Content-Type: application/json" -d '{"release":"0.1.${TRAVIS_BUILD_NUMBER}"}' https://api-pipeline.dashboardhub.io/environments/4c561a20-ddc0-11e7-8be6-8d1c32f4579f/deployed/${DH_TOKEN}/finishBuild
+	curl -XPOST -H "Content-Type: application/json" -d '{"release":"0.1.${TRAVIS_BUILD_NUMBER}"}' https://api-pipeline.dashboardhub.io/environments/e4ee46c0-fe4c-11e7-b4bd-35d420cf5b7e/deployed/${DH_TOKEN}/finishBuild
 
 pipeline.version.deploy.start:
-	curl -XPOST -H "Content-Type: application/json" -d '{"release":"0.1.${TRAVIS_BUILD_NUMBER}"}' https://api-pipeline.dashboardhub.io/environments/4c561a20-ddc0-11e7-8be6-8d1c32f4579f/deployed/${DH_TOKEN}/startDeploy
+	curl -XPOST -H "Content-Type: application/json" -d '{"release":"0.1.${TRAVIS_BUILD_NUMBER}"}' https://api-pipeline.dashboardhub.io/environments/e4ee46c0-fe4c-11e7-b4bd-35d420cf5b7e/deployed/${DH_TOKEN}/startDeploy
 
 pipeline.version.deploy.finish:
-	curl -XPOST -H "Content-Type: application/json" -d '{"release":"0.1.${TRAVIS_BUILD_NUMBER}"}' https://api-pipeline.dashboardhub.io/environments/4c561a20-ddc0-11e7-8be6-8d1c32f4579f/deployed/${DH_TOKEN}/finishDeploy
+	curl -XPOST -H "Content-Type: application/json" -d '{"release":"0.1.${TRAVIS_BUILD_NUMBER}"}' https://api-pipeline.dashboardhub.io/environments/e4ee46c0-fe4c-11e7-b4bd-35d420cf5b7e/deployed/${DH_TOKEN}/finishDeploy
