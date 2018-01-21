@@ -12,7 +12,7 @@ guard-%:
 deploy: pipeline.version.deploy.start sync pipeline.version.deploy.finish
 
 sync: guard-AWS_CLOUDFRONT_ID
-	aws s3 sync _site s3://cdn.dashboardhub.io --delete --region eu-west-2
+	aws s3 sync . s3://cdn.dashboardhub.io --delete --region eu-west-2
 	aws cloudfront create-invalidation --distribution-id ${AWS_CLOUDFRONT_ID} --paths /\*
 
 pipeline.version.deploy.start:
