@@ -121,3 +121,9 @@ Resource: https://cdn.dashboardhub.io/logo/icon-only-white-1216x1160.png
 [DashboardHub QR code - Black and White](qr-code/dashboardhub-qr-code.svg)
 
 [DashboardHub Colour QR code - Grey and Orange](qr-code/dashboardhub-qr-code-colour.svg)
+
+## DashboardHub Mascot "Dash"
+
+![All mascots](mascot/all.png)
+
+All posts and vector files are in the `mascot` directory.
