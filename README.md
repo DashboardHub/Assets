@@ -87,7 +87,7 @@ Resource: https://cdn.dashboardhub.io/logo-vertical-white-1872x1433.png
 
 ### Icon only
 
-SVG https://cdn.dashboardhub.io/icon-only-orange.svg
+ - SVG https://cdn.dashboardhub.io/icon-only-orange.svg
 
 #### Standard colours
 
