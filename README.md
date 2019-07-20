@@ -26,8 +26,8 @@ Resource: https://cdn.dashboardhub.io/favicon.ico
 
 #### Standard colours
 
-SVG Std https://cdn.dashboardhub.io/logo-horizontal-std.svg
-SVG White https://cdn.dashboardhub.io/logo-horizontal-white.svg
+ - SVG Std https://cdn.dashboardhub.io/logo-horizontal-std.svg
+ - SVG White https://cdn.dashboardhub.io/logo-horizontal-white.svg
 
 Large
 ![Dashboard Hub Horizontal Logo](logo-horizontal-std-2567x580.png)
@@ -61,7 +61,7 @@ Resource: https://cdn.dashboardhub.io/logo-horizontal-white-400x90.png
 
 ### Vertical Dashboard Hub Logo
 
-SVG Std https://cdn.dashboardhub.io/logo-vertical-std.svg
+ - SVG Std https://cdn.dashboardhub.io/logo-vertical-std.svg
 
 #### Standard colours
 
@@ -87,7 +87,7 @@ Resource: https://cdn.dashboardhub.io/logo-vertical-white-1872x1433.png
 
 ### Icon only
 
-SVG https://cdn.dashboardhub.io/icon-only-orange.svg
+ - SVG https://cdn.dashboardhub.io/icon-only-orange.svg
 
 #### Standard colours
 
