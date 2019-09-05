@@ -29,7 +29,7 @@ deploy:
     script: sh ./scripts/deployment/dev.sh
     on:
       branch: v0.11.6
-  - provider: firebase
+  - provider: script
     skip_cleanup: true
     message: "Deploying v0.11-$TRAVIS_BUILD_NUMBER-ALPHA"
     script: sh ./scripts/deployment/prod.sh
