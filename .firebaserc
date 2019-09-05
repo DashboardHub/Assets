@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "pipelinedashboard-dev": {
+      "hosting": {
+        "dev-cdn": [
+          "pipelinedashboard-dev-cdn"
+        ]
+      }
+    },
+    "pipelinedashboard-prod": {
+      "hosting": {
+        "prod-cdn": [
+          "pipelinedashboard-prod-cdn"
+        ]
+      }
+    }
+  }
+}
