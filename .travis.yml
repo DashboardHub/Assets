@@ -28,6 +28,7 @@ deploy:
   - provider: firebase
     skip_cleanup: true
     message: "Deploying v0.11.dev-$TRAVIS_BUILD_NUMBER-ALPHA"
+    project: "pipelinedashboard-dev-cdn"
     token:
       secure: "nnxGs81E5zkTjcKZCwpvsikjNlv7lTuKEdzYd3TM0mthJnlvRURTfSHcrC/U+kj23U+ZiooXcCo8ITKZmGvKs1dzg5ag4mcoxIyWy0CA0HfbKYQIqCCij0+4au4vK9gNjutk4Wun8peXl8oSB90F1A6DdooDm/GiNUidyXSlvZk="
     on:
@@ -35,6 +36,7 @@ deploy:
   - provider: firebase
     skip_cleanup: true
     message: "Deploying v0.11-$TRAVIS_BUILD_NUMBER-ALPHA"
+    project: "pipelinedashboard-prod-cdn"
     token:
       secure: "nnxGs81E5zkTjcKZCwpvsikjNlv7lTuKEdzYd3TM0mthJnlvRURTfSHcrC/U+kj23U+ZiooXcCo8ITKZmGvKs1dzg5ag4mcoxIyWy0CA0HfbKYQIqCCij0+4au4vK9gNjutk4Wun8peXl8oSB90F1A6DdooDm/GiNUidyXSlvZk="
     on:
