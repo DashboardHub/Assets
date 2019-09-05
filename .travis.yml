@@ -6,8 +6,8 @@ branches:
   - master
   - v0.11.6
 env:
-  - NODE_ENV=development
-  - secure: "AdKTawqqAdEQ2Zdz4mJKqxAfvBazuAtWwo9Oc7OVnUykscgsKXh1OM73Pwo5TBT4+EhOV91TlQFx/fUESkhbcCLh1vIwrtAn551yxVftQEFzwVBzG/8J47No14MI+Ze3mJfkPMfpr1AQeckozYSeGHO9gAlEnZozpk1qMOeicsE="
+  global:
+    - secure: "AdKTawqqAdEQ2Zdz4mJKqxAfvBazuAtWwo9Oc7OVnUykscgsKXh1OM73Pwo5TBT4+EhOV91TlQFx/fUESkhbcCLh1vIwrtAn551yxVftQEFzwVBzG/8J47No14MI+Ze3mJfkPMfpr1AQeckozYSeGHO9gAlEnZozpk1qMOeicsE="
 
 addons:
   apt:
