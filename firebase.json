@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "site": "pipelinedashboard-dev-cdn",
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,30 +1,41 @@
-language: ruby
-rvm:
-- 2.3.3
-
-before_install:
-  - sudo apt-get install python3
-  - sudo pip install awscli
-
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
-script:
-  - echo 'Static files only!'
-
-# branch whitelist, only for GitHub Pages
+language: node_js
+node_js:
+  - "10"
 branches:
   only:
   - master
-
+  - v0.11.6
 env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
+  - NODE_ENV=development
 
-sudo: false # route your build to the container-based infrastructure for a faster build
+addons:
+  apt:
+    packages:
+      - libgconf-2-4
+cache:
+  npm: true
+  directories:
+    - ~/.cache
+
+before_install:
+  - npm cache --force clean
+  - npm install -g firebase-tools
+
+script:
+  - echo "Static assets only"
 
 deploy:
-  - provider: script
+  - provider: firebase
     skip_cleanup: true
-    script: make deploy
+    message: "Deploying v0.11.dev-$TRAVIS_BUILD_NUMBER-ALPHA"
+    token:
+      secure: "nnxGs81E5zkTjcKZCwpvsikjNlv7lTuKEdzYd3TM0mthJnlvRURTfSHcrC/U+kj23U+ZiooXcCo8ITKZmGvKs1dzg5ag4mcoxIyWy0CA0HfbKYQIqCCij0+4au4vK9gNjutk4Wun8peXl8oSB90F1A6DdooDm/GiNUidyXSlvZk="
+    on:
+      branch: v0.11.6
+  - provider: firebase
+    skip_cleanup: true
+    message: "Deploying v0.11-$TRAVIS_BUILD_NUMBER-ALPHA"
+    token:
+      secure: "nnxGs81E5zkTjcKZCwpvsikjNlv7lTuKEdzYd3TM0mthJnlvRURTfSHcrC/U+kj23U+ZiooXcCo8ITKZmGvKs1dzg5ag4mcoxIyWy0CA0HfbKYQIqCCij0+4au4vK9gNjutk4Wun8peXl8oSB90F1A6DdooDm/GiNUidyXSlvZk="
     on:
       branch: master
