@@ -7,6 +7,7 @@ branches:
   - v0.11.6
 env:
   - NODE_ENV=development
+  - secure: "AdKTawqqAdEQ2Zdz4mJKqxAfvBazuAtWwo9Oc7OVnUykscgsKXh1OM73Pwo5TBT4+EhOV91TlQFx/fUESkhbcCLh1vIwrtAn551yxVftQEFzwVBzG/8J47No14MI+Ze3mJfkPMfpr1AQeckozYSeGHO9gAlEnZozpk1qMOeicsE="
 
 addons:
   apt:
@@ -25,19 +26,15 @@ script:
   - echo "Static assets only"
 
 deploy:
-  - provider: firebase
+  - provider: script
     skip_cleanup: true
     message: "Deploying v0.11.dev-$TRAVIS_BUILD_NUMBER-ALPHA"
-    project: "pipelinedashboard-dev-cdn"
-    token:
-      secure: "nnxGs81E5zkTjcKZCwpvsikjNlv7lTuKEdzYd3TM0mthJnlvRURTfSHcrC/U+kj23U+ZiooXcCo8ITKZmGvKs1dzg5ag4mcoxIyWy0CA0HfbKYQIqCCij0+4au4vK9gNjutk4Wun8peXl8oSB90F1A6DdooDm/GiNUidyXSlvZk="
+    script: sh ./scripts/deployment/dev.sh
     on:
       branch: v0.11.6
   - provider: firebase
     skip_cleanup: true
     message: "Deploying v0.11-$TRAVIS_BUILD_NUMBER-ALPHA"
-    project: "pipelinedashboard-prod-cdn"
-    token:
-      secure: "nnxGs81E5zkTjcKZCwpvsikjNlv7lTuKEdzYd3TM0mthJnlvRURTfSHcrC/U+kj23U+ZiooXcCo8ITKZmGvKs1dzg5ag4mcoxIyWy0CA0HfbKYQIqCCij0+4au4vK9gNjutk4Wun8peXl8oSB90F1A6DdooDm/GiNUidyXSlvZk="
+    script: sh ./scripts/deployment/prod.sh
     on:
       branch: master
