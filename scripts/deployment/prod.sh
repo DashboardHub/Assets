@@ -1,1 +1,1 @@
-firebase deploy --project pipelinedashboard-prod --token $FIREBASE_TOKEN --only hosting:pipelinedashboard-prod-cdn --force
+firebase deploy --project pipelinedashboard-prod --only hosting:pipelinedashboard-prod-cdn --force
